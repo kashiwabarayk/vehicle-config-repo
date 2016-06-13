@@ -2,6 +2,8 @@ server:
   port: ${PORT:9393}
 management:
   contextPath: /management
+  security:
+    enabled: false
 security:
   basic:
     enabled: false
