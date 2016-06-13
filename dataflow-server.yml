@@ -1,0 +1,19 @@
+server:
+  port: ${PORT:9393}
+management:
+  contextPath: /management
+security:
+  basic:
+    enabled: false
+spring:
+  cloud:
+    deployer:
+      cloudfoundry:
+        domain: 52.68.100.51.xip.io
+        org: pcfdev-org
+        space: pcfdev-space
+        username: admin
+        password: admin
+        services: scdf-redis,scdf-rabbitmq
+        skip-ssl-validation: true
+        url: http://api.${spring.cloud.deployer.cloudfoundry.domain}
