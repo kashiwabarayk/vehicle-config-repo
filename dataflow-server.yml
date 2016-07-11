@@ -11,7 +11,7 @@ spring:
   cloud:
     deployer:
       cloudfoundry:
-        domain: 52.68.100.51.xip.io
+        domain: local.pcfdev.io
         org: pcfdev-org
         space: pcfdev-space
         username: admin
