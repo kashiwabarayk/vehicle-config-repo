@@ -19,3 +19,4 @@ spring:
         services: fleet-demo-redis,fleet-demo-rabbitmq
         skip-ssl-validation: true
         url: http://api.${spring.cloud.deployer.cloudfoundry.domain}
+        enable-random-app-name-prefix: false
