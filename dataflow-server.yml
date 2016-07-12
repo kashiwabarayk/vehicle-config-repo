@@ -11,12 +11,12 @@ spring:
   cloud:
     deployer:
       cloudfoundry:
-        domain: run.pivotal.io
+        domain: cfapps.io
         org: APJ
         space: staging
         username: ${CF_USERNAME:xxx}
         password: ${CF_PASSWORD:xxx}
         services: fleet-demo-redis,fleet-demo-rabbitmq
         skip-ssl-validation: false
-        url: https://api.${spring.cloud.deployer.cloudfoundry.domain}
+        url: https://api.run.pivotal.io
         enable-random-app-name-prefix: true
