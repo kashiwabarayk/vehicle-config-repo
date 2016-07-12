@@ -11,12 +11,12 @@ spring:
   cloud:
     deployer:
       cloudfoundry:
-        domain: local.pcfdev.io
+        domain: run.pivotal.io
         org: pcfdev-org
         space: pcfdev-space
         username: admin
         password: admin
         services: fleet-demo-redis,fleet-demo-rabbitmq
-        skip-ssl-validation: true
-        url: http://api.${spring.cloud.deployer.cloudfoundry.domain}
+        skip-ssl-validation: false
+        url: https://api.${spring.cloud.deployer.cloudfoundry.domain}
         enable-random-app-name-prefix: false
