@@ -14,8 +14,8 @@ spring:
         domain: run.pivotal.io
         org: APJ
         space: staging
-        username: tmaki@pivotal.io
-        password: xxxx
+        username: ${CF_USERNAME:xxx}
+        password: ${CF_PASSWORD:xxx}
         services: fleet-demo-redis,fleet-demo-rabbitmq
         skip-ssl-validation: false
         url: https://api.${spring.cloud.deployer.cloudfoundry.domain}
