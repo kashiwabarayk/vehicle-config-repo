@@ -16,7 +16,7 @@ spring:
         space: pcfdev-space
         username: admin
         password: admin
-        services: fleet-demo-redis,fleet-demo-rabbitmq
+        services: fleet-demo-redis,fleet-demo-rabbitmq,fleet-demo-stream-db
         skip-ssl-validation: true
         url: http://api.${spring.cloud.deployer.cloudfoundry.domain}
         enable-random-app-name-prefix: false
