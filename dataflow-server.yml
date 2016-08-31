@@ -11,12 +11,12 @@ spring:
   cloud:
     deployer:
       cloudfoundry:
-        domain: apps.pcfdemo.ik.am
-        org: fleet-demo
-        space: development
-        username: demo
-        password: demo
+        domain: ${CF_DOMAIN:xxx}
+        org: ${CF_ORG:xxx}
+        space: ${CF_SPACE:xxx}
+        username: ${CF_USERNAME:xxx}
+        password: ${CF_PASSWORD:xxx}
         services: fleet-demo-redis,fleet-demo-rabbitmq,fleet-demo-stream-db
         skip-ssl-validation: true
-        url: https://api.system.pcfdemo.ik.am
+        url: ${CF_URL:xxx}
         enable-random-app-name-prefix: false
